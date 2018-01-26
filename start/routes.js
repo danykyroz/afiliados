@@ -15,5 +15,6 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
-Route.resource('login', 'LoginController').only(['index', 'show'])
+Route.on('/').render('index')
+Route.on('/portafolio').render('portafolio')
+Route.resource('home', 'HomeController').only(['index'])
